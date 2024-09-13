@@ -10,9 +10,17 @@ This project demonstrates a semantic search system implemented within video cont
 - Extracts video frames and processes them for feature extraction.
 - Designed for video indexing and retrieval tasks.
 
-## Installation
+## Dependencies
+- Python 3.x
+- PyTorch
+- OpenAI CLIP
+- yt-dlp
+- OpenCV
+- PIL (Pillow)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/semantic-search-video-clip.git
-   cd semantic-search-video-clip
+
+## How It Works
+- The video is split into frames using OpenCV.
+- Each frame is processed through the CLIP model to extract visual features.
+- A text query is embedded into the same feature space as the frames, allowing for semantic similarity comparison.
+- The most relevant frames are returned based on the query.
