@@ -1,0 +1,1 @@
+# -Semantic-Search-within-Video-using-CLIP-Model
